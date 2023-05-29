@@ -23,6 +23,9 @@ public class Categoria {
 	private long id; 
 	
 	@NotNull(message = "Preenchimento obrigarótio")
+	private String genero;
+	
+	@NotNull(message = "Preenchimento obrigarótio")
 	private String terror; 
 	
 	@NotNull(message = "Preenchimento obrigarótio")
@@ -45,6 +48,17 @@ public class Categoria {
 	public List<Produto> getProduto() {
 		return produto;
 	}
+
+	
+	public String getGenero() {
+		return genero;
+	}
+
+
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+
 
 	public void setProduto(List<Produto> produto) {
 		this.produto = produto;
